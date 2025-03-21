@@ -1,0 +1,9 @@
+{% extends "System_Monitor_Servers/base.html" %}
+
+{% block content %}
+<h1>Деталі сервера</h1>
+<p><strong>Ім'я:</strong> {{ server.name }}</p>
+<p><strong>IP адреса:</strong> {{ server.ip_address }}</p>
+<p><strong>Тип:</strong> {{ server.type }}</p>
+<p><strong>ОС:</strong> {{ server.os }}</p>
+{% endblock %}

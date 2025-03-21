@@ -1,0 +1,15 @@
+{% extends "System_Monitor_Servers/base.html" %}
+
+{% block content %}
+<h1>Список серверів</h1>
+<ul>
+    {% for server in servers %}
+        <li>
+            <strong>Ім'я:</strong> {{ server.name }}<br>
+            <strong>IP адреса:</strong> {{ server.ip_address }}<br>
+            <strong>Тип:</strong> {{ server.type }}<br>
+            <strong>ОС:</strong> {{ server.os }}
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
