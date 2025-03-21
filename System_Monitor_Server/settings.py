@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # мої застосунки
     'System_Monitor_Servers',
+    
 
     # стандартні застосунки django
     'django.contrib.admin',
